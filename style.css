@@ -1,0 +1,89 @@
+.navbar {
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: antiquewhite;
+}
+#img-nav {
+    width: 200px;
+    height: 50px;
+    border-radius: 30%;
+    cursor: pointer;
+}
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    cursor: pointer;
+}
+.navbar ul li {
+    padding-left: 50px;
+    font-size: large;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.navbar:hover {
+    background-color: burlywood;
+    color: antiquewhite;
+}
+.navbar li:active {
+    color: red;
+}
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column; 
+        align-items: flex-start;
+        padding: 10px;
+    }
+    #img-nav {
+        width: 150px;
+        height: 40px;
+    }
+    .navbar ul {
+        flex-direction: column;
+    }
+    .navbar ul li {
+        padding-left: 0;
+        padding: 5px 0;
+        font-size: medium; 
+    }
+}
+
+.banner {
+    height: 700px;
+    width: 100%;
+    background-image: url("assets/images/Banner-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.banner-div {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 150px;
+    font-size: large;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+.btn-banner {
+    cursor: pointer;
+    padding: 15px;
+    background-color: black;
+    color: red;
+    border: none;
+    border-radius: 5%;
+    font-weight: 500;
+}
+.btn-banner:hover {
+    color: black;
+    background-color: burlywood;
+}
+ 
+@media only screen and (max-width: 768px) {
+    .banner{
+        height: auto;
+        width: auto;
+        padding: 25px;
+    }    
+}
